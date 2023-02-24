@@ -8,6 +8,7 @@ const linkStyles = {
   background: "blue",
   textDecoration: "none",
   color: "white",
+  borderRadius: "1.25em",
 };
 
 function Navbar({ setIsLoggedIn }) {
@@ -53,7 +54,18 @@ function Navbar({ setIsLoggedIn }) {
       >
         Login
       </NavLink>
-      <button onClick={handleLogout}>Logout</button>
+      <button
+        onClick={handleLogout}
+        style={{
+          background: "white",
+          padding: ".5em",
+          marginLeft: ".8em",
+          borderRadius: ".4em",
+          border: "1px solid blue",
+        }}
+      >
+        Logout
+      </button>
     </div>
   );
 }

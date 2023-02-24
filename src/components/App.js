@@ -9,7 +9,15 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
-    <div>
+    <div
+      style={{
+        margin: "2em",
+        fontFamily: "sans-serif",
+        background: "#a5afaf",
+        padding: "2em",
+        borderRadius: "1em",
+      }}
+    >
       <Navbar setIsLoggedIn={setIsLoggedIn} />
       <Switch>
         <Route exact path="/about">
